@@ -13,10 +13,9 @@
     </head>
     <body>
         <h1>Hello ${username}</h1>
-               
+
         ${homeMessage}
-        
-        <a href="login">Logout</a>
-          
+
+        <a href='login?logout=true'>Logout</a>          
     </body>
 </html>
