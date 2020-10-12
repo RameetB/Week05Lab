@@ -12,7 +12,9 @@ public class AccountService {
 
     public User login(String username, String password) {
 
-        if (username.equals("abe") || username.equals("barb") && password.equals("password")) {
+        if (username.equals("abe") && password.equals("password")) {
+            user = new User(username, password);
+        } else if (username.equals("barb") && password.equals("password")) {
             user = new User(username, password);
         }
         if (user != null) {
